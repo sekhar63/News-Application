@@ -50,15 +50,4 @@ class NewsAdapter(
         return newsArticles.size
     }
 
-    fun clear() {
-        newsArticles.toMutableList().clear()
-        notifyDataSetChanged()
-    }
-
-    // Add a list of items -- change to type used
-    fun addAll(list: List<Article>) {
-        newsArticles.toMutableList().addAll(list)
-        notifyDataSetChanged()
-    }
-
 }

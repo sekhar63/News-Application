@@ -5,7 +5,7 @@ import kotlinx.coroutines.CoroutineScope
 import javax.inject.Inject
 
 class MainRepository @Inject constructor(
-    val retrofitService: RetrofitService,
+    private val retrofitService: RetrofitService,
     val scope: CoroutineScope
 ) {
     fun getLatestNews() =

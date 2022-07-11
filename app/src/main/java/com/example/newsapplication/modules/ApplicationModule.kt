@@ -17,11 +17,6 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class ApplicationModule {
-    val TAG = "newsApplication"
-    // lateinit var retrofitService: RetrofitService
-
-    //  lateinit var coroutineScope: CoroutineScope
-
     @Provides
     @Singleton
     fun provideRetrofit(): RetrofitService {
